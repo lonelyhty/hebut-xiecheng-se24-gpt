@@ -1,7 +1,0 @@
-{
-  "browser": { "mode": "launch", "executable_path": "C:/Program Files/Google/Chrome/Application/chrome.exe", "headless": true },
-  "start_url": { "url": "http://127.0.0.1:4173/" },
-  "environment": { "viewport": { "width": 1440, "height": 1100, "device_scale_factor": 1 }, "locale": "zh-CN", "timezone": "Asia/Shanghai" },
-  "actions": [{ "step_id": "local-homepage", "action": "wait_for", "locator": { "kind": "css", "selector": "#flight-results article:first-of-type" }, "state": "visible", "timeout_ms": 10000 }],
-  "capture": { "at_end": ["dom", "accessibility", "screenshot", "url"], "events": ["network", "console", "page-errors"], "network": { "request_body": true, "response_body": true } }
-}

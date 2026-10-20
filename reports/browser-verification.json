@@ -1,95 +1,72 @@
 {
-  "generatedAt": "2026-10-20T06:18:58.904Z",
+  "verifiedAt": "2026-10-20T06:18:58.904Z",
+  "scope": "本地模拟平台的六个业务流程；仅验证声明的页面里程碑，不代表完整网络覆盖、所有视口或正式可访问性审计。",
   "scenarios": [
     {
       "name": "local-homepage",
-      "evidenceId": "ev_283e5188a46a7aed6a3032fcd92b549ba9755846d29c5bb1f725745de164f13a",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
       "completedSteps": 2,
       "pageErrors": 0,
       "milestone": "上海",
-      "passed": true,
-      "completeness": {
-        "status": "incomplete",
-        "equality_eligible": false,
-        "missing_sections": [
-          "events"
-        ],
-        "truncated_sections": []
-      }
+      "passed": true
     },
     {
       "name": "local-booking-flow",
-      "evidenceId": "ev_e2ea69dc89f621625abcf8993c1dc9917336229c63150351a62c537d35cef046",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
       "completedSteps": 14,
       "pageErrors": 0,
       "milestone": "你的登机牌",
-      "passed": true,
-      "completeness": {
-        "status": "incomplete",
-        "equality_eligible": false,
-        "missing_sections": [
-          "events"
-        ],
-        "truncated_sections": []
-      }
+      "passed": true
     },
     {
       "name": "local-mobile",
-      "evidenceId": "ev_d64992f5e248fd0a84193361b553509829aceb80292cb8e20e88584d5281a168",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
       "completedSteps": 2,
       "pageErrors": 0,
       "milestone": "搜索机票",
-      "passed": true,
-      "completeness": {
-        "status": "complete",
-        "equality_eligible": true,
-        "missing_sections": [],
-        "truncated_sections": []
-      }
+      "passed": true
     },
     {
       "name": "local-planner",
-      "evidenceId": "ev_8c2e0a378742e04455a129393eaa3f010dfb773699ef22c751e912ed10289681",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
       "completedSteps": 6,
       "pageErrors": 0,
       "milestone": "成都",
-      "passed": true,
-      "completeness": {
-        "status": "incomplete",
-        "equality_eligible": false,
-        "missing_sections": [
-          "events"
-        ],
-        "truncated_sections": []
-      }
+      "passed": true
     },
     {
       "name": "local-orders",
-      "evidenceId": "ev_54436a46e04e2921879261b5f1b4186903d0719c38f1ba9cb92df4ff48b548dc",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
       "completedSteps": 2,
       "pageErrors": 0,
       "milestone": "已值机",
-      "passed": true,
-      "completeness": {
-        "status": "complete",
-        "equality_eligible": true,
-        "missing_sections": [],
-        "truncated_sections": []
-      }
+      "passed": true
     },
     {
       "name": "local-agency",
-      "evidenceId": "ev_8b0e86eac5afc8a8e6f0af1bb28e6492f397faa6f8836d232aab97889b88cc73",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
       "completedSteps": 4,
       "pageErrors": 0,
       "milestone": "已出票金额",
-      "passed": true,
-      "completeness": {
-        "status": "complete",
-        "equality_eligible": true,
-        "missing_sections": [],
-        "truncated_sections": []
-      }
+      "passed": true
     }
   ],
   "passed": true

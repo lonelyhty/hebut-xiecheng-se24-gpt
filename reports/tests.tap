@@ -2,23 +2,23 @@
 > rexiecheng-air-travel-platform@1.0.0 test
 > node --test tests/*.test.mjs
 
-(node:19052) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(node:34640) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ SQLite 重启后保留商务舱订单、锁定金额与扣减库存 (19.0203ms)
-(node:31348) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+✔ SQLite 重启后保留商务舱订单、锁定金额与扣减库存 (19.9199ms)
+(node:33004) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ 真实 HTTP 搜索：筛选、排序、推荐、舱位与含税价格 (30.4681ms)
-✔ 查询边界：同城、未知城市、无效日历日、过去日期与超大人数 (6.938ms)
-✔ 未登录写入、角色与跨站写入边界 (9.512ms)
-✔ 查询→锁价→创建订单→模拟支付失败/成功→选座值机完整流程 (16.9938ms)
-✔ 订单创建幂等、报价不可重用、篡改金额无效及账户隔离 (14.516ms)
-✔ 创建时校验乘机人及联系手机，失败不扣库存 (5.3161ms)
-✔ 取消与退款为幂等状态转换，库存只恢复一次 (10.1003ms)
-✔ 最后一张票的并发订单只能一单成功 (8.0092ms)
-✔ 已占座位不能被另一订单重复值机 (6.7057ms)
-✔ 酒店与门票查询、行程生成及旅行社聚合接口 (5.2769ms)
-✔ 报价到期拒绝创建；订单到期释放库存且只能释放一次 (9.1805ms)
-✔ 前端独立静态资源可访问，内容类型与 CSP 正确 (6.4748ms)
+✔ 真实 HTTP 搜索：筛选、排序、推荐、舱位与含税价格 (33.3722ms)
+✔ 查询边界：同城、未知城市、无效日历日、过去日期与超大人数 (6.2276ms)
+✔ 未登录写入、角色与跨站写入边界 (9.5352ms)
+✔ 查询→锁价→创建订单→模拟支付失败/成功→选座值机完整流程 (15.2811ms)
+✔ 订单创建幂等、报价不可重用、篡改金额无效及账户隔离 (11.3895ms)
+✔ 创建时校验乘机人及联系手机，失败不扣库存 (5.2824ms)
+✔ 取消与退款为幂等状态转换，库存只恢复一次 (9.2214ms)
+✔ 最后一张票的并发订单只能一单成功 (7.3619ms)
+✔ 已占座位不能被另一订单重复值机 (6.386ms)
+✔ 酒店与门票查询、行程生成及旅行社聚合接口 (5.0763ms)
+✔ 报价到期拒绝创建；订单到期释放库存且只能释放一次 (9.5344ms)
+✔ 前端独立静态资源可访问，内容类型与 CSP 正确 (6.1598ms)
 ℹ tests 13
 ℹ suites 0
 ℹ pass 13
@@ -26,4 +26,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 241.2249
+ℹ duration_ms 240.2622
