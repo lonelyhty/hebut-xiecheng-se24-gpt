@@ -1,0 +1,8 @@
+data/
+captures/
+evidence/
+node_modules/
+*.log
+/inputs/js-summary-view.json
+/inputs/hotel-module-view.json
+/inputs/hotel-trace.json

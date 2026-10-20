@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1368ed" />
+    <meta
+      name="description"
+      content="云程旅行 · 机票、酒店、门票与行程规划一站式演示平台"
+    />
+    <title>云程旅行 · 下一站，去看看世界</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要内容</a>
+    <aside class="sidebar" aria-label="业务导航">
+      <a class="brand" href="#flights"
+        ><img src="/assets/logo.svg" alt="" width="39" height="39" /><span
+          >云程旅行<small>YUNCHENG TRAVEL</small></span
+        ></a
+      >
+      <div class="nav-caption">发现你的下一程</div>
+      <nav id="navigation"></nav>
+      <div class="sidebar-bottom">
+        <div class="support-icon" data-icon="headphones"></div>
+        <strong>每一程，都有我们</strong>
+        <p>一站式出行 · 全程安心</p>
+        <span class="demo-label">课程设计 · 本地模拟</span>
+      </div>
+    </aside>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span>探索世界</span><span class="slash">/</span
+          ><strong id="page-title">机票预订</strong>
+        </div>
+        <div class="top-actions">
+          <span class="local-badge"><i></i> 演示环境</span
+          ><button class="text-button" id="top-orders">我的订单</button
+          ><button class="profile" id="profile">
+            <span class="avatar">旅</span><span id="actor-label">体验旅客</span
+            ><span class="chevron">⌄</span>
+          </button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div id="app"><div class="loading-page">正在为你准备下一程…</div></div>
+      </main>
+      <footer>
+        <span>云程旅行 YUNCHENG TRAVEL</span
+        ><span>机票 · 酒店 · 门票 · 每一程都恰到好处</span
+        ><span>所有价格、库存及支付均为模拟</span>
+      </footer>
+    </div>
+    <dialog id="modal" aria-labelledby="modal-title">
+      <div id="modal-body"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

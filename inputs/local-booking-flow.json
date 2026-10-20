@@ -1,0 +1,21 @@
+{
+  "browser": { "mode": "launch", "executable_path": "C:/Program Files/Google/Chrome/Application/chrome.exe", "headless": true },
+  "start_url": { "url": "http://127.0.0.1:4173/" },
+  "environment": { "viewport": { "width": 1440, "height": 1000, "device_scale_factor": 1 }, "locale": "zh-CN", "timezone": "Asia/Shanghai" },
+  "actions": [
+    { "step_id": "search-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "#flight-results article:first-of-type" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "reserve-first-flight", "action": "click", "locator": { "kind": "css", "selector": "#flight-results article:first-of-type .book-button" }, "timeout_ms": 10000 },
+    { "step_id": "passenger-form-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "#fill-demo" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "demo-passengers", "action": "click", "locator": { "kind": "css", "selector": "#fill-demo" }, "timeout_ms": 10000 },
+    { "step_id": "create-order", "action": "click", "locator": { "kind": "css", "selector": "#create-order" }, "timeout_ms": 10000 },
+    { "step_id": "payment-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "#pay-order" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "pay-order", "action": "click", "locator": { "kind": "css", "selector": "#pay-order" }, "timeout_ms": 10000 },
+    { "step_id": "checkin-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "#start-checkin" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "open-checkin", "action": "click", "locator": { "kind": "css", "selector": "#start-checkin" }, "timeout_ms": 10000 },
+    { "step_id": "seats-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "[data-seat='14F']" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "choose-seat", "action": "click", "locator": { "kind": "css", "selector": "[data-seat='14F']" }, "timeout_ms": 10000 },
+    { "step_id": "confirm-checkin", "action": "click", "locator": { "kind": "css", "selector": "#confirm-checkin" }, "timeout_ms": 10000 },
+    { "step_id": "boarding-pass-ready", "action": "wait_for", "locator": { "kind": "css", "selector": ".boarding-card" }, "state": "visible", "timeout_ms": 10000 }
+  ],
+  "capture": { "after_each_step": ["url"], "at_end": ["dom", "accessibility", "screenshot", "url"], "events": ["network", "console", "page-errors"], "network": { "request_body": true, "response_body": true } }
+}

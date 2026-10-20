@@ -1,0 +1,7 @@
+{
+  "browser": { "mode": "launch", "executable_path": "C:/Program Files/Google/Chrome/Application/chrome.exe", "headless": true },
+  "start_url": { "url": "https://flights.ctrip.com/" },
+  "environment": { "viewport": { "width": 1440, "height": 1000, "device_scale_factor": 1 }, "locale": "zh-CN", "timezone": "Asia/Shanghai" },
+  "actions": [{ "step_id": "flight-home", "action": "wait_for_timeout", "duration_ms": 8000 }],
+  "capture": { "at_end": ["dom", "accessibility", "screenshot", "url"], "events": ["network", "console", "page-errors"], "network": { "request_body": true, "response_body": true, "header_values": true } }
+}

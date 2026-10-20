@@ -1,0 +1,849 @@
+{
+  "generatedAt": "2026-10-20T06:18:58.904Z",
+  "digestMeaning": "fileSha256 hashes saved UTF-8 file bytes. REA evidenceId is preserved as returned; this script does not recompute REA semantic identifiers.",
+  "verifiedArtifacts": 42,
+  "verifiedBodies": 357,
+  "verifiedScripts": 36,
+  "localScenarios": [
+    {
+      "name": "local-homepage",
+      "evidenceId": "ev_283e5188a46a7aed6a3032fcd92b549ba9755846d29c5bb1f725745de164f13a",
+      "completedSteps": 2,
+      "pageErrors": 0,
+      "milestone": "上海",
+      "passed": true,
+      "completeness": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      }
+    },
+    {
+      "name": "local-booking-flow",
+      "evidenceId": "ev_e2ea69dc89f621625abcf8993c1dc9917336229c63150351a62c537d35cef046",
+      "completedSteps": 14,
+      "pageErrors": 0,
+      "milestone": "你的登机牌",
+      "passed": true,
+      "completeness": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      }
+    },
+    {
+      "name": "local-mobile",
+      "evidenceId": "ev_d64992f5e248fd0a84193361b553509829aceb80292cb8e20e88584d5281a168",
+      "completedSteps": 2,
+      "pageErrors": 0,
+      "milestone": "搜索机票",
+      "passed": true,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      }
+    },
+    {
+      "name": "local-planner",
+      "evidenceId": "ev_8c2e0a378742e04455a129393eaa3f010dfb773699ef22c751e912ed10289681",
+      "completedSteps": 6,
+      "pageErrors": 0,
+      "milestone": "成都",
+      "passed": true,
+      "completeness": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      }
+    },
+    {
+      "name": "local-orders",
+      "evidenceId": "ev_54436a46e04e2921879261b5f1b4186903d0719c38f1ba9cb92df4ff48b548dc",
+      "completedSteps": 2,
+      "pageErrors": 0,
+      "milestone": "已值机",
+      "passed": true,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      }
+    },
+    {
+      "name": "local-agency",
+      "evidenceId": "ev_8b0e86eac5afc8a8e6f0af1bb28e6492f397faa6f8836d232aab97889b88cc73",
+      "completedSteps": 4,
+      "pageErrors": 0,
+      "milestone": "已出票金额",
+      "passed": true,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "file": "evidence/doctor.json",
+      "fileSha256": "662c1deda75d246e554ca2fe4a42323ac716a84eb5ce6be18216f56999cd5244",
+      "bytes": 65655,
+      "kind": "diagnostic",
+      "error": null
+    },
+    {
+      "file": "evidence/flights-scenario.json",
+      "fileSha256": "645cb3a8041d74d0fa4da2820a827f09d53e86907ebb59bcda9aeb6ef93d4731",
+      "bytes": 19860,
+      "evidenceId": "ev_7beed5bca362a378ba434dff450307f4fddd292f868eb3c506c514c08e3a5b1d",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/homepage-invalid-request.json",
+      "fileSha256": "26a1e88b7c38ab770b9c770cb43de4d199ef7b360cffa3976585de3aa233024b",
+      "bytes": 384,
+      "kind": "diagnostic",
+      "error": "invalid_request"
+    },
+    {
+      "file": "evidence/homepage-launch-sandbox-error.json",
+      "fileSha256": "57d1d6d28979a4ed0d17e3deed27f6a57d5eeaa8cc03ddd013ada06dc3c93d74",
+      "bytes": 411,
+      "kind": "diagnostic",
+      "error": "execution_failure"
+    },
+    {
+      "file": "evidence/homepage-scenario.json",
+      "fileSha256": "5745a5a8b0863c6ee285042f2f6fa1e68ca7330e79b9781d76769992ff870987",
+      "bytes": 11950603,
+      "evidenceId": "ev_39fe3d6d3a5141b3a0879c0692e1ee3893ec294690009f4a6a768c757049d432",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/hotel-feature-trace.json",
+      "fileSha256": "8e0a41aa2ff9652bbf62c1189cd8b79f6cf0dc4a1df61795e1492f8767947b83",
+      "bytes": 52573,
+      "evidenceId": "ev_a11c0fa78d30067b53481fac8470745a8613a94d478e81d4970696d6f495dd8f",
+      "operation": "trace_application_feature",
+      "authority": "analyst-inference",
+      "confidence": "inferred",
+      "coverage": {
+        "status": "partial",
+        "source_graph_status": "partial",
+        "total_seed_matches": 1
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "A trace reports graph relationships, not proof that code executed or that a feature is reachable in every state.",
+        "Native handoffs never open a binary or invoke a provider automatically; snapshot reuse remains provider/profile/target exact.",
+        "Static, native, passive-runtime, inferred, and unknown facts retain their original authority in the returned graph.",
+        "The source application graph is incomplete; unmatched seeds and frontiers remain unknown."
+      ]
+    },
+    {
+      "file": "evidence/hotel-module-view.json",
+      "fileSha256": "97f7b03bcd30ead19de09ac1a4d4422b709a10bc890e0a2e502d465026f91ac6",
+      "bytes": 63833,
+      "evidenceId": "ev_8e174edc02e59d98a1f7813e77b019072f17c9aa96eded165e04d051624a367c",
+      "operation": "inspect_analysis_view",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 97,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+        "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+        "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+        "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+        "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+        "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+        "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+        "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+        "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+        "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+        "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+        "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+        "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+        "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+        "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+        "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code.",
+        "isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js during semantic",
+        "isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js during semantic",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js during semantic"
+      ]
+    },
+    {
+      "file": "evidence/javascript-application.json",
+      "fileSha256": "6d42a268de5ae2b6e268a39fe901e653824933bd84bb8b1b7b4e8de8639d1dd0",
+      "bytes": 47476745,
+      "evidenceId": "ev_9529a5b2efe9691f84acf4cd410722a464a4bc0a720814851ff18d0d15c7d1a0",
+      "operation": "analyze_javascript_application",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "coverage": {
+        "status": "partial",
+        "truncated": false,
+        "omitted_count": null,
+        "limits": [
+          {
+            "name": "javascript_analysis_parent_result_budget_bytes",
+            "value": 2066616828,
+            "unit": "bytes"
+          },
+          {
+            "name": "javascript_analysis_semantic_result_budget_bytes",
+            "value": 0,
+            "unit": "bytes"
+          },
+          {
+            "name": "javascript_analysis_worker_heap_limit_bytes",
+            "value": 1635778560,
+            "unit": "bytes"
+          },
+          {
+            "name": "javascript_analysis_worker_timeout_ms",
+            "value": 90000,
+            "unit": "milliseconds"
+          }
+        ]
+      },
+      "failedSteps": [],
+      "limitations": [
+        "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+        "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+        "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+        "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+        "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code.",
+        "isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js during semantic",
+        "isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js during semantic",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js during semantic"
+      ]
+    },
+    {
+      "file": "evidence/javascript-sandbox-error.json",
+      "fileSha256": "b45c10833f1b8e667140636708931356836edbab6d2113becb516f8a2367e59b",
+      "bytes": 867653,
+      "kind": "diagnostic",
+      "error": "capability_unavailable"
+    },
+    {
+      "file": "evidence/javascript-summary-view.json",
+      "fileSha256": "6ca6d3494781481f7bde7a9d57e3a007a49ca24bce6ab00684e6ddaae81f039d",
+      "bytes": 39625,
+      "evidenceId": "ev_17d405c88a3ecf5de4b3b92a486e676f2271e663ac87e964ba1e9566dc13b4ab",
+      "operation": "inspect_analysis_view",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 97,
+        "total": 191,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+        "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+        "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+        "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+        "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+        "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+        "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+        "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+        "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+        "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+        "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Resource constraint during analyze_javascript_application: Expanded application relationships for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js exceed the parent's result budget; complete static facts were retained on the file node",
+        "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+        "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+        "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+        "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+        "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+        "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code.",
+        "isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-12-bc191812e0b26683b49d4491b3e7e6312af099ec362c43598be4c3c2d1266c74.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing isolated/source-20-2ecf9ade6ab5f3ccfe47f823beb775b151295d8663918301722c56d2e128d030.js during semantic",
+        "isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-29-de00fb114990f57b8b2d6a554e0d31e3f33044de62936b95fa0f09562b073621.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-33-2f3f6fb5c8c2195224e7a70388767c9ed4c45d44bb2d481ffe6e7e8ecb19290f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js: Resource constraint during analyze_javascript_application: Semantic graph for isolated/source-35-ff1e8c5c41b871b7ef4d00ce93461d606709d0f0e8f341fad89acdfc45851fb0.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_businessAdvBlock/1778314551811/businessAdvBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/NFES/mfe_travelMap/1777000246927/travelMap.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/0d49f9979af21872039b0a198e895d5ef2b14b36239015d41c4541fdb6a4c145/ResMarketOnline/R2/common/js/adsdkswiper.min.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_businessTravelBlock/1778313455566/businessTravelBlock.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_compose/1788330230986/compose.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketAdvert/1744009470012/marketAdvert.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_marketPlayer/1742882593896/marketPlayer.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformAdvertStairs/1778311514049/platformAdvertStairs.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_platformSeoFoot/1778313332903/platformSeoFoot.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ares/nfes-libs/webvitals.es5.27aa96d584f94cd04ce0f9c4b6002ff8.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/gcc/online-globalsearch/allsearchbar.5bddc93c559f5affc82fc0027a62fa3f.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js: Resource constraint during analyze_javascript_application: The parent reserved its remaining result capacity for static observations; semantic analysis of origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/commons.2c7e68cc611945f6d7f3e54a9aeb3104.js was not started",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/nfes/pc-home/react.d19645b8274201426b0a352a7cd812ee.js during semantic",
+        "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js: Resource constraint during analyze_javascript_application: Semantic graph for origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/modules/ubt/websdk/ubt.minl.ca4bc6337c8491dcdc5fa755c3e5436a.js exceeds the parent's remaining result budget; static and module facts were retained",
+        "origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js: Resource constraint during analyze_javascript_application: Owned JavaScript worker exhausted its heap while analyzing origins/b21a16c912ac8f72f88b618764af0c12b92e2b40e717330ce1ec8c3f62e643fa/market/union/google_conversion_async.js during semantic"
+      ]
+    },
+    {
+      "file": "evidence/local-agency.json",
+      "fileSha256": "1d619439afe2de85fce7f2493e5db3882b1897b6ee1f2cb8c58055ad1b60627e",
+      "bytes": 309547,
+      "evidenceId": "ev_8b0e86eac5afc8a8e6f0af1bb28e6492f397faa6f8836d232aab97889b88cc73",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-booking-flow-before-final-replay.json",
+      "fileSha256": "5ce6bb12bde8a946838a70a73f59161a062eb6634d7a9c8241a6f48afe5b09f5",
+      "bytes": 571355,
+      "evidenceId": "ev_f3bb94dd7df90cc522fc620ce1ce9b8badde8acbf083a62152aa8da468096563",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-booking-flow-initial-selector-error.json",
+      "fileSha256": "ecc2dc922268a343244ec032739bc130eb5af484ab87bf4c78540dc2d03c94b3",
+      "bytes": 166647,
+      "evidenceId": "ev_86b7feb04cbb41d85e29e29cd6cd52f58fbb3d4ee4d012deb39bb154b2a838fe",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "accessibility",
+          "action",
+          "dom",
+          "events",
+          "screenshot",
+          "url"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [
+        "search-ready",
+        "reserve-first-flight",
+        "passenger-form-ready",
+        "demo-passengers",
+        "create-order",
+        "payment-ready",
+        "pay-order",
+        "checkin-ready",
+        "open-checkin",
+        "seats-ready",
+        "choose-seat",
+        "confirm-checkin",
+        "boarding-pass-ready"
+      ],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-booking-flow.json",
+      "fileSha256": "aec7d7b234ad529b3dbd809c1c6ec11981f59b63fcc8305805bad06ceff35167",
+      "bytes": 600583,
+      "evidenceId": "ev_e2ea69dc89f621625abcf8993c1dc9917336229c63150351a62c537d35cef046",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-homepage-before-final-replay.json",
+      "fileSha256": "b178b4786e80d19de521f9512e1a51384c396418ac94ad1713e67b1aed49dcc6",
+      "bytes": 465223,
+      "evidenceId": "ev_3296fe6e13def5245c3e3464ba9a5e09cf2bb63ba80c7c02c333ff78498daed5",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-homepage-initial-selector-error.json",
+      "fileSha256": "2629dd7e71f36356c7f7a0d84999dc189d643e68b69da5b5fa1003e6903ffd0a",
+      "bytes": 465965,
+      "evidenceId": "ev_0e68ffd0061390bd020c85d08fd33f575efcffae6d32053e06b55c30c8f77968",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "action",
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [
+        "local-homepage"
+      ],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-homepage.json",
+      "fileSha256": "710e8780616716be616cdb578144dcf1f5cb3d513daccb12febe75998785e2c6",
+      "bytes": 493381,
+      "evidenceId": "ev_283e5188a46a7aed6a3032fcd92b549ba9755846d29c5bb1f725745de164f13a",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-mobile-before-final-replay.json",
+      "fileSha256": "b1c07513d83ce4392da62ce2af911cc398ecbd978a4c3f5be5fc7d5e9a1d9a35",
+      "bytes": 132230,
+      "evidenceId": "ev_e6c77b1699267814e4c8616b77658173f11eea55cff86fa4d7a07fd5826f2ee0",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-mobile-initial-selector-error.json",
+      "fileSha256": "e9840a50c06c7633df64c2dc3340d7c52f72e6e968a7697072f081262a3aa901",
+      "bytes": 132973,
+      "evidenceId": "ev_9fd6bcba1bb81667d00008ad5a026819488b881aacc952ecf7481759cd899778",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "action"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [
+        "mobile-ready"
+      ],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-mobile.json",
+      "fileSha256": "bdb29fb6f7bc9843782426a236848f0a1c630062ead73693a83e23df9c90f6d9",
+      "bytes": 132628,
+      "evidenceId": "ev_d64992f5e248fd0a84193361b553509829aceb80292cb8e20e88584d5281a168",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-orders.json",
+      "fileSha256": "32f4babfff55a2100178b95109967ef338a20b064e8c8e6f427729b8d2cd9df5",
+      "bytes": 277245,
+      "evidenceId": "ev_54436a46e04e2921879261b5f1b4186903d0719c38f1ba9cb92df4ff48b548dc",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-planner-before-final-replay.json",
+      "fileSha256": "bfb8ed27a7d0ff0255e02bc98e25337fd5638611a2762b75ac5fe911bf8f59ad",
+      "bytes": 378690,
+      "evidenceId": "ev_ef85c7039bfc899d19e765a4c54e0c111329d729e1665a8670a78da29ab9bda3",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-planner-initial-selector-error.json",
+      "fileSha256": "c1915ec7129a5ba53ad4a6fd96ce7d23c28117f6930e5b5d743ecdcedc546fd5",
+      "bytes": 162561,
+      "evidenceId": "ev_e86590dc9346a6cb6989552c9a72c78e77fab8e155bd315e07871f6b74c4d617",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "accessibility",
+          "action",
+          "dom",
+          "events",
+          "screenshot",
+          "url"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [
+        "hotel-ready",
+        "plan-chengdu",
+        "planner-ready",
+        "generate-plan",
+        "itinerary-ready"
+      ],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Some network requests had not completed when capture ended; later activity is unknown.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/local-planner.json",
+      "fileSha256": "66509af061070be4cffa3883f9af50cb89a01ee3ddcc85a7e2a6fc74ed80e79b",
+      "bytes": 407940,
+      "evidenceId": "ev_8c2e0a378742e04455a129393eaa3f010dfb773699ef22c751e912ed10289681",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "coverage": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "truncated_sections": []
+      },
+      "failedSteps": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "file": "evidence/script-export.json",
+      "fileSha256": "28b7c2a4c6a63c7ed557c738b3979df85cdb3a5b1cf58ef5c48831d168f135a9",
+      "bytes": 29439,
+      "evidenceId": "ev_7757f6670b246bf7fab7c981e774d74eb3cd0f4df27962e3c42d144a1e7fb0ef",
+      "operation": "export_web_scripts",
+      "authority": "historical-reference",
+      "confidence": "derived",
+      "coverage": null,
+      "failedSteps": [],
+      "limitations": [
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+        "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+        "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+        "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+        "Captured response bytes are browser-decoded bytes; Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+      ]
+    }
+  ]
+}

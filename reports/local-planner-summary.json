@@ -1,0 +1,118 @@
+{
+  "evidence_id": "ev_8c2e0a378742e04455a129393eaa3f010dfb773699ef22c751e912ed10289681",
+  "operation": "capture_browser_scenario",
+  "completeness": {
+    "status": "incomplete",
+    "equality_eligible": false,
+    "missing_sections": [
+      "events"
+    ],
+    "truncated_sections": []
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction.",
+    "Some selected network content was unavailable; per-transaction content states retain the reason.",
+    "Browser host platform and architecture were not observed."
+  ],
+  "requests": 18,
+  "resources": 18,
+  "bytes": 130668,
+  "hosts": [
+    "127.0.0.1:4187"
+  ],
+  "scripts": [
+    {
+      "url": "http://127.0.0.1:4187/app.js",
+      "bytes": 46780
+    }
+  ],
+  "api_requests": [
+    {
+      "transaction_id": "request-5",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/meta",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-6",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-8",
+      "method": "POST",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-9",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/hotels?city=",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-16",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/trips",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-17",
+      "method": "POST",
+      "url": "http://127.0.0.1:4187/api/trips",
+      "type": "fetch",
+      "status": 201
+    },
+    {
+      "transaction_id": "request-18",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/trips",
+      "type": "fetch",
+      "status": 200
+    }
+  ],
+  "steps": [
+    {
+      "id": "scenario_start",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#hotels"
+    },
+    {
+      "id": "hotel-ready",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#hotels"
+    },
+    {
+      "id": "plan-chengdu",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#planner"
+    },
+    {
+      "id": "planner-ready",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#planner"
+    },
+    {
+      "id": "generate-plan",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#planner"
+    },
+    {
+      "id": "itinerary-ready",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#planner"
+    }
+  ]
+}

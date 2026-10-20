@@ -1,0 +1,539 @@
+{
+  "evidenceId": "ev_8e174edc02e59d98a1f7813e77b019072f17c9aa96eded165e04d051624a367c",
+  "nodeId": "jag_node_d3c72425a3c1b8c7d0dc87b1d1d1932daa3e70937475aa7a40ceb3af646af188",
+  "path": "origins/319094ab9301e41c47f1ca7f7f337993f38d5b90e500d34b391580860793fcf5/NFES/mfe_hotelSearchV1/1726724617685/hotelSearchV1.js",
+  "sha256": "4a27667447d6f526c0137d7f60269a34a6784af9e5a6afb87aac1b118a1d51a4",
+  "staticParseStatus": "complete",
+  "vendors": [
+    "webpack"
+  ],
+  "endpointCandidates": [
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 16031
+        },
+        "end": {
+          "line": 1,
+          "column": 16076
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.number.separator.decimal",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 17728
+        },
+        "end": {
+          "line": 1,
+          "column": 17774
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.number.separator.grouping",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 17979
+        },
+        "end": {
+          "line": 1,
+          "column": 18014
+        }
+      },
+      "kind": "network",
+      "value": "key.percent.template",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 18155
+        },
+        "end": {
+          "line": 1,
+          "column": 18195
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.short.number.format",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 20959
+        },
+        "end": {
+          "line": 1,
+          "column": 21005
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.unit.measurement",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 21048
+        },
+        "end": {
+          "line": 1,
+          "column": 21095
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.unit.temperature",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22172
+        },
+        "end": {
+          "line": 1,
+          "column": 22213
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22242
+        },
+        "end": {
+          "line": 1,
+          "column": 22297
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22331
+        },
+        "end": {
+          "line": 1,
+          "column": 22383
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.standalone.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22422
+        },
+        "end": {
+          "line": 1,
+          "column": 22488
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.standalone.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22525
+        },
+        "end": {
+          "line": 1,
+          "column": 22589
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.calendar.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22615
+        },
+        "end": {
+          "line": 1,
+          "column": 22658
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.weekday.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22689
+        },
+        "end": {
+          "line": 1,
+          "column": 22746
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.weekday.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22774
+        },
+        "end": {
+          "line": 1,
+          "column": 22806
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.am",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 22823
+        },
+        "end": {
+          "line": 1,
+          "column": 22855
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.pm",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 32493
+        },
+        "end": {
+          "line": 1,
+          "column": 32526
+        }
+      },
+      "kind": "network",
+      "value": "key.duration.space",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 304033
+        },
+        "end": {
+          "line": 1,
+          "column": 304078
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.number.separator.decimal",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 306131
+        },
+        "end": {
+          "line": 1,
+          "column": 306177
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.number.separator.grouping",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 306382
+        },
+        "end": {
+          "line": 1,
+          "column": 306417
+        }
+      },
+      "kind": "network",
+      "value": "key.percent.template",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 306558
+        },
+        "end": {
+          "line": 1,
+          "column": 306598
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.short.number.format",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 309632
+        },
+        "end": {
+          "line": 1,
+          "column": 309678
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.unit.measurement",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 309723
+        },
+        "end": {
+          "line": 1,
+          "column": 309770
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.unit.temperature",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311080
+        },
+        "end": {
+          "line": 1,
+          "column": 311121
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311150
+        },
+        "end": {
+          "line": 1,
+          "column": 311205
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311239
+        },
+        "end": {
+          "line": 1,
+          "column": 311291
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.standalone.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311330
+        },
+        "end": {
+          "line": 1,
+          "column": 311396
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.standalone.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311433
+        },
+        "end": {
+          "line": 1,
+          "column": 311497
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.month.calendar.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311523
+        },
+        "end": {
+          "line": 1,
+          "column": 311566
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.weekday.names",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311597
+        },
+        "end": {
+          "line": 1,
+          "column": 311654
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.weekday.names.abbreviations",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311682
+        },
+        "end": {
+          "line": 1,
+          "column": 311714
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.am",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 311731
+        },
+        "end": {
+          "line": 1,
+          "column": 311763
+        }
+      },
+      "kind": "network",
+      "value": "key.l10n.datetime.pm",
+      "mechanism": "call:get"
+    },
+    {
+      "module_key": null,
+      "location": {
+        "start": {
+          "line": 1,
+          "column": 322249
+        },
+        "end": {
+          "line": 1,
+          "column": 322282
+        }
+      },
+      "kind": "network",
+      "value": "key.duration.space",
+      "mechanism": "call:get"
+    }
+  ],
+  "sourceMapDeclarations": [],
+  "limitations": [
+    "JavaScript syntax was parsed as data and was never evaluated."
+  ],
+  "trace": {
+    "matched_seeds": 1,
+    "traced_nodes": 3,
+    "traced_edges": 2,
+    "terminal_paths": 2,
+    "native_handoffs": 0,
+    "observed_facts": 4,
+    "inferred_facts": 0,
+    "unknown_facts": 0,
+    "unavailable_facts": 2
+  }
+}

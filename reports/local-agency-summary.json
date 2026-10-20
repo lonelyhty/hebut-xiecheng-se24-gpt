@@ -1,0 +1,91 @@
+{
+  "evidence_id": "ev_8b0e86eac5afc8a8e6f0af1bb28e6492f397faa6f8836d232aab97889b88cc73",
+  "operation": "capture_browser_scenario",
+  "completeness": {
+    "status": "complete",
+    "equality_eligible": true,
+    "missing_sections": [],
+    "truncated_sections": []
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction.",
+    "Browser host platform and architecture were not observed."
+  ],
+  "requests": 10,
+  "resources": 10,
+  "bytes": 116218,
+  "hosts": [
+    "127.0.0.1:4187"
+  ],
+  "scripts": [
+    {
+      "url": "http://127.0.0.1:4187/app.js",
+      "bytes": 46780
+    }
+  ],
+  "api_requests": [
+    {
+      "transaction_id": "request-5",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/meta",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-6",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-8",
+      "method": "POST",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-9",
+      "method": "POST",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-10",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/agency",
+      "type": "fetch",
+      "status": 200
+    }
+  ],
+  "steps": [
+    {
+      "id": "scenario_start",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#agency"
+    },
+    {
+      "id": "agency-invite-ready",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#agency"
+    },
+    {
+      "id": "switch-agency-role",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#agency"
+    },
+    {
+      "id": "metrics-ready",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/#agency"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "browser": { "mode": "launch", "executable_path": "C:/Program Files/Google/Chrome/Application/chrome.exe", "headless": true },
+  "start_url": { "url": "http://127.0.0.1:4173/#hotels" },
+  "environment": { "viewport": { "width": 1440, "height": 1000, "device_scale_factor": 1 }, "locale": "zh-CN", "timezone": "Asia/Shanghai" },
+  "actions": [
+    { "step_id": "hotel-ready", "action": "wait_for", "locator": { "kind": "css", "selector": ".catalog-card:first-of-type" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "plan-chengdu", "action": "click", "locator": { "kind": "css", "selector": "[data-plan-city='CTU']" }, "timeout_ms": 10000 },
+    { "step_id": "planner-ready", "action": "wait_for", "locator": { "kind": "css", "selector": "#generate-plan" }, "state": "visible", "timeout_ms": 10000 },
+    { "step_id": "generate-plan", "action": "click", "locator": { "kind": "css", "selector": "#generate-plan" }, "timeout_ms": 10000 },
+    { "step_id": "itinerary-ready", "action": "wait_for", "locator": { "kind": "css", "selector": ".day-card:nth-of-type(3)" }, "state": "visible", "timeout_ms": 10000 }
+  ],
+  "capture": { "at_end": ["dom", "accessibility", "screenshot", "url"], "events": ["network", "console", "page-errors"], "network": { "request_body": true, "response_body": true } }
+}

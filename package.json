@@ -1,0 +1,16 @@
+{
+  "name": "rexiecheng-air-travel-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.16.0",
+  "description": "携程公开页面逆向参考与航空旅行一站式服务教学平台",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node backend/server.mjs",
+    "dev": "node --watch backend/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:performance": "node scripts/performance.mjs",
+    "verify:evidence": "node scripts/verify-evidence.mjs"
+  }
+}

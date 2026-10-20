@@ -1,0 +1,77 @@
+{
+  "evidence_id": "ev_283e5188a46a7aed6a3032fcd92b549ba9755846d29c5bb1f725745de164f13a",
+  "operation": "capture_browser_scenario",
+  "completeness": {
+    "status": "incomplete",
+    "equality_eligible": false,
+    "missing_sections": [
+      "events"
+    ],
+    "truncated_sections": []
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction.",
+    "Some selected network content was unavailable; per-transaction content states retain the reason.",
+    "Browser host platform and architecture were not observed."
+  ],
+  "requests": 13,
+  "resources": 13,
+  "bytes": 125928,
+  "hosts": [
+    "127.0.0.1:4187"
+  ],
+  "scripts": [
+    {
+      "url": "http://127.0.0.1:4187/app.js",
+      "bytes": 46780
+    }
+  ],
+  "api_requests": [
+    {
+      "transaction_id": "request-5",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/meta",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-6",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-8",
+      "method": "POST",
+      "url": "http://127.0.0.1:4187/api/session",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "transaction_id": "request-9",
+      "method": "GET",
+      "url": "http://127.0.0.1:4187/api/flights?from=SHA&to=BJS&date=2026-10-21&cabin=economy&passengers=1&sort=recommended",
+      "type": "fetch",
+      "status": 200
+    }
+  ],
+  "steps": [
+    {
+      "id": "scenario_start",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/"
+    },
+    {
+      "id": "local-homepage",
+      "status": "completed",
+      "url": "http://127.0.0.1:4187/"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "measuredAt": "2026-10-20T06:19:39.724Z",
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "arch": "x64",
+    "transport": "loopback HTTP",
+    "database": "SQLite in-memory"
+  },
+  "scenario": "Warmed repeated SHA → BJS flight search; five simulated flights; default inventory; 20 warmups",
+  "requests": 300,
+  "concurrency": 10,
+  "success": 300,
+  "failed": 0,
+  "durationMs": 211,
+  "requestsPerSecond": 1420,
+  "latencyMs": {
+    "p50": 6.66,
+    "p95": 10.77,
+    "p99": 13.47,
+    "max": 14.49
+  },
+  "acceptance": {
+    "criterion": "zero failures and local p95 < 250 ms",
+    "passed": true
+  },
+  "limitations": [
+    "Local warmed process only; not a production load/capacity guarantee.",
+    "No external API latency, cross-host network, TLS, concurrent order writes or production-size database is included."
+  ]
+}
